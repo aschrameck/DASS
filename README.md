@@ -42,24 +42,6 @@ pip install pandas numpy matplotlib seaborn
 ### Step 3: Run Analysis
 
 * Load the main analysis script (e.g., `dass_analysis.py`) in Python or Jupyter Notebook.
-* Example usage:
-
-```python
-import pandas as pd
-from dass_analysis import preprocess_data, analyze_responses, plot_results
-
-# Load survey data
-data = pd.read_csv('data/dass_survey.csv')
-
-# Preprocess data
-clean_data = preprocess_data(data)
-
-# Analyze responses
-results = analyze_responses(clean_data)
-
-# Plot visualizations
-plot_results(results)
-```
 
 ---
 
@@ -67,9 +49,9 @@ plot_results(results)
 
 ```
 DASS/
-├── data/                  # Raw and processed survey data
-├── dass_analysis.py       # Main analysis functions
-├── output/                # Visualizations and results
+├── data/                      # Raw survey data
+├── DASS_scores_analysis.py    # Main analysis functions
+├── resukts/                   # Visualizations and final csv files
 ├── README.md
 ```
 
