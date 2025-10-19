@@ -1,8 +1,87 @@
-### Depression, Anxiety, and Stress Scale (DASS) Score Evaluation
-● Conducted a comprehensive analysis of scores from nearly 40,000 participants who completed the online DASS, ensuring the accuracy of their responses for research purposes.
+# Depression, Anxiety, and Stress Scale (DASS) Evaluation
 
-● Implemented data preprocessing techniques to refine the dataset by isolating illness-specific questions and excluding participants who did not meet the diagnostic criteria.
+**GitHub Link:** [DASS Evaluation](https://github.com/aschrameck/DASS)
 
-● Created statistical visualizations to illustrate average scores for each relevant question, revealing insights into patterns of mental health conditions.
+---
 
-● Utilized **Python** (Pandas, NumPy, Matplotlib) for data cleaning, manipulation, and visualization.
+## Project Overview
+
+This project analyzes responses from the Depression, Anxiety, and Stress Scale (DASS) survey to assess mental health conditions, evaluate the accuracy and reliability of responses, and visualize patterns in the data.
+
+Key objectives include:
+
+* Preprocessing survey data to isolate illness-specific questions and exclude non-diagnostic responses.
+* Assessing response reliability and identifying patterns in depression, anxiety, and stress scores.
+* Generating visualizations to communicate findings effectively.
+
+---
+
+## Prerequisites
+
+* **Python 3.x**
+* Python packages: `pandas`, `numpy`, `matplotlib`, `seaborn`
+* Optional: Jupyter Notebook or any Python IDE for running scripts interactively
+
+---
+
+## Setup Instructions
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/aschrameck/DASS.git
+cd DASS
+```
+
+### Step 2: Install Required Packages
+
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+### Step 3: Run Analysis
+
+* Load the main analysis script (e.g., `dass_analysis.py`) in Python or Jupyter Notebook.
+* Example usage:
+
+```python
+import pandas as pd
+from dass_analysis import preprocess_data, analyze_responses, plot_results
+
+# Load survey data
+data = pd.read_csv('data/dass_survey.csv')
+
+# Preprocess data
+clean_data = preprocess_data(data)
+
+# Analyze responses
+results = analyze_responses(clean_data)
+
+# Plot visualizations
+plot_results(results)
+```
+
+---
+
+## Project Structure
+
+```
+DASS/
+├── data/                  # Raw and processed survey data
+├── dass_analysis.py       # Main analysis functions
+├── output/                # Visualizations and results
+├── README.md
+```
+
+---
+
+## Tools & Packages
+
+* Python: `pandas`, `numpy`, `matplotlib`, `seaborn`
+* Optional: Jupyter Notebook for interactive exploration
+
+---
+
+## License
+
+This project is released under the MIT License.
